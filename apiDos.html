@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="assets/style.css" rel="stylesheet" media="screen" />
+</head>
+
+<body onload="apenasCarga()">
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+                    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+							<a class="nav-link text-dark" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" href="apiUno.html">Grafico Uno</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" href="apiDos.html">Grafico Dos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" href="apiTres.html">Grafico Tres</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link text-dark" href="apiCuatro.html">Grafico Cuatro</a>
+						</li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- contact -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-primary">Grafico Dos: </h2>
+                    <p>Submit the form and confirm your email address at.
+                    </p>
+
+                    <canvas class="mt-4" id="myChart" width="400" height="400"></canvas>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="./js/graficoDos.js"></script>
+</body>
+
+</html>
